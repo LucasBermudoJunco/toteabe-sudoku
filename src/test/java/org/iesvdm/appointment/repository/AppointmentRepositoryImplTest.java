@@ -1,12 +1,15 @@
 package org.iesvdm.appointment.repository;
 
 import org.iesvdm.appointment.entity.Appointment;
+import org.iesvdm.appointment.entity.User;
 import org.iesvdm.appointment.repository.impl.AppointmentRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;
 import java.util.Set;
+
+import static org.assertj.core.api.Assertions.*;
 
 public class AppointmentRepositoryImplTest {
 
@@ -31,6 +34,25 @@ public class AppointmentRepositoryImplTest {
      */
     @Test
     void getOneTest() {
+        // WHEN
+        Appointment cita1 = new Appointment();
+        Appointment cita2 = new Appointment();
+
+        cita1.setId(1);
+        cita2.setId(2);
+
+        appointments.add(cita1);
+        appointments.add(cita2);
+
+        // DO
+        Appointment cita3 = appointmentRepository.getOne(1);
+        Appointment cita4 = appointmentRepository.getOne(2);
+        Appointment cita5 = appointmentRepository.getOne(3);
+
+        // THEN
+        assertThat(cita1).isEqualTo(cita3);
+        assertThat(cita2).isEqualTo(cita4);
+        assertThat(cita5).isNull();
 
     }
 
@@ -42,7 +64,23 @@ public class AppointmentRepositoryImplTest {
      */
     @Test
     void saveTest() {
+        // WHEN
+        Appointment cita1 = new Appointment();
+        Appointment cita2 = new Appointment();
 
+        cita1.setId(1);
+        cita2.setId(2);
+
+        appointmentRepository.save(cita1);
+        appointmentRepository.save(cita2);
+
+        // DO
+        Appointment cita3 = appointmentRepository.getOne(1);
+        Appointment cita4 = appointmentRepository.getOne(2);
+
+        // THEN
+        assertThat(cita1).isEqualTo(cita3);
+        assertThat(cita2).isEqualTo(cita4);
     }
 
     /**
@@ -54,7 +92,24 @@ public class AppointmentRepositoryImplTest {
      */
     @Test
     void findCanceledByUserTest() {
+        // WHEN
+        Appointment cita1 = new Appointment();
+        Appointment cita2 = new Appointment();
 
+        cita1.setId(1);
+        cita2.setId(2);
+
+        User user = new User(101,"usuario0","contraseña");
+        cita1.setCanceler(user);
+
+        appointmentRepository.save(cita1);
+        appointmentRepository.save(cita2);
+
+        // DO
+        Appointment cita3 = appointmentRepository.findCanceledByUser(user.getId()).getFirst();
+
+        // THEN
+        assertThat(cita1).isEqualTo(cita3);
     }
 
     /**
@@ -68,6 +123,13 @@ public class AppointmentRepositoryImplTest {
      */
     @Test
     void findByCustomerIdWithStartInPeroidTest() {
+        // WHEN
+
+
+        // DO
+
+
+        // THEN
 
     }
 
@@ -80,6 +142,13 @@ public class AppointmentRepositoryImplTest {
      */
     @Test
     void findScheduledWithEndBeforeDateTest() {
+        // WHEN
+
+
+        // DO
+
+
+        // THEN
 
     }
 
@@ -94,6 +163,13 @@ public class AppointmentRepositoryImplTest {
      */
     @Test
     void getEligibleAppointmentsForExchangeTest() {
+        // WHEN
+
+
+        // DO
+
+
+        // THEN
 
     }
 
@@ -106,6 +182,13 @@ public class AppointmentRepositoryImplTest {
      */
     @Test
     void findExchangeRequestedWithStartBeforeTest() {
+        // WHEN
+
+
+        // DO
+
+
+        // THEN
 
     }
 }

@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4924cbe-497e-42d5-8035-47d9055b38bf" name="Changes" comment="Tests Sudoku">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/sudoku/SudokuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/sudoku/SudokuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/appointment/repository/AppointmentRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/appointment/repository/AppointmentRepositoryImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,23 +23,23 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature-test-sudoku" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "LucasBermudoJunco"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LucasBermudoJunco&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/LucasBermudoJunco/toteabe-sudoku.git",
-    "accountId": "e297c9f8-d252-4f0e-ab25-e00653b42c7c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LucasBermudoJunco/toteabe-sudoku.git&quot;,
+    &quot;accountId&quot;: &quot;e297c9f8-d252-4f0e-ab25-e00653b42c7c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -53,7 +52,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.AppointmentRepositoryImplTest.findCanceledByUserTest.executor": "Run",
+    "JUnit.AppointmentRepositoryImplTest.getOneTest.executor": "Run",
+    "JUnit.AppointmentRepositoryImplTest.saveTest.executor": "Run",
     "JUnit.SudokuTest.copyBoardTest.executor": "Run",
+    "JUnit.SudokuTest.executor": "Coverage",
     "JUnit.SudokuTest.failTest.executor": "Run",
     "JUnit.SudokuTest.fillBoardBasedInCluesRandomly.executor": "Run",
     "JUnit.SudokuTest.fillBoardBasedInCluesRandomlySolvable.executor": "Run",
@@ -65,7 +68,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "AppointmentRepositoryImplTest",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/usuario/IdeaProjects/pruebaud4daw/src/main/java/org/iesvdm/appointment/entity",
     "node.js.detected.package.eslint": "true",
@@ -87,22 +90,56 @@
       <recent name="org.iesvdm" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SudokuTest.failTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.sudoku.Main" />
+  <component name="RunManager" selected="JUnit.AppointmentRepositoryImplTest.findCanceledByUserTest">
+    <configuration name="AppointmentRepositoryImplTest.findCanceledByUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pruebaud4daw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iesvdm.sudoku.*" />
+          <option name="PATTERN" value="org.iesvdm.appointment.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.appointment.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.appointment.repository.AppointmentRepositoryImplTest" />
+      <option name="METHOD_NAME" value="findCanceledByUserTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.sudoku.Main_" />
+    <configuration name="AppointmentRepositoryImplTest.getOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pruebaud4daw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.appointment.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.appointment.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.appointment.repository.AppointmentRepositoryImplTest" />
+      <option name="METHOD_NAME" value="getOneTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppointmentRepositoryImplTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pruebaud4daw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.appointment.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.appointment.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.appointment.repository.AppointmentRepositoryImplTest" />
+      <option name="METHOD_NAME" value="saveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SudokuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pruebaud4daw" />
       <extension name="coverage">
         <pattern>
@@ -110,6 +147,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm.sudoku" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.sudoku.SudokuTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,45 +170,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuTest.isNumberInRowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pruebaud4daw" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.sudoku" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.sudoku.SudokuTest" />
-      <option name="METHOD_NAME" value="isNumberInRowTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SudokuTest.putNumberInBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pruebaud4daw" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iesvdm.sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iesvdm.sudoku" />
-      <option name="MAIN_CLASS_NAME" value="org.iesvdm.sudoku.SudokuTest" />
-      <option name="METHOD_NAME" value="putNumberInBoardTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppointmentRepositoryImplTest.findCanceledByUserTest" />
+        <item itemvalue="JUnit.AppointmentRepositoryImplTest.saveTest" />
+        <item itemvalue="JUnit.AppointmentRepositoryImplTest.getOneTest" />
+        <item itemvalue="JUnit.SudokuTest" />
         <item itemvalue="JUnit.SudokuTest.failTest" />
-        <item itemvalue="Application.Main_" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.SudokuTest.isNumberInRowTest" />
-        <item itemvalue="JUnit.SudokuTest.putNumberInBoardTest" />
       </list>
     </recent_temporary>
   </component>
@@ -197,21 +205,23 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inicial" />
     <MESSAGE value="Tests Sudoku" />
     <option name="LAST_COMMIT_MESSAGE" value="Tests Sudoku" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/sudoku/Sudoku.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.iesvdm.sudoku.Sudoku" memberName="board" />
@@ -223,5 +233,10 @@
         <watch expression="sudoku.board" language="JAVA" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/toteabe6_prueba_practica_Sudoku$SudokuTest.ic" NAME="SudokuTest Coverage Results" MODIFIED="1716800888332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.iesvdm.sudoku.*</FILTER>
+    </SUITE>
   </component>
 </project>
